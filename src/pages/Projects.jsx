@@ -1,15 +1,11 @@
 import React, { useEffect } from 'react'
-import o1 from "../assets/gallery/01.jpg";
 import o3 from "../assets/gallery/03.jpg";
 import o4 from "../assets/gallery/04.jpg";
 import o5 from "../assets/gallery/05.jpg";
-import o6 from "../assets/gallery/06.jpg";
-import o7 from "../assets/gallery/07.jpg";
 import o8 from "../assets/gallery/08.jpg";
-import o9 from "../assets/gallery/09.jpg";
 import o10 from "../assets/gallery/10.jpg";
-import o11 from "../assets/gallery/11.jpg";
-import o12 from "../assets/gallery/12.jpg";
+import o31 from "../assets/gallery/31.jpg";
+import o24 from "../assets/gallery/24.jpg";
 import o13 from "../assets/gallery/13.jpg";
 import o14 from "../assets/gallery/14.jpg";
 import o15 from "../assets/gallery/15.jpg";
@@ -207,17 +203,13 @@ function Projects() {
               <img src={bs19} alt="Bussa project images" data-aos="zoom-in" />
               <img src={bs20} alt="Bussa project images" data-aos="zoom-in" />
               <img src={bs21} alt="Bussa project images" data-aos="zoom-in" />
-              <img src={o1} alt="project-image-1" data-aos="zoom-in" />
               <img src={o3} alt="project-image-1" data-aos="zoom-in" />
               <img src={o4} alt="project-image-1" data-aos="zoom-in" />
               <img src={o5} alt="project-image-1" data-aos="zoom-in" />
-              <img src={o6} alt="project-image-1" data-aos="zoom-in" />
-              <img src={o7} alt="project-image-1" data-aos="zoom-in" />
               <img src={o8} alt="project-image-1" data-aos="zoom-in" />
-              <img src={o9} alt="project-image-1" data-aos="zoom-in" />
               <img src={o10} alt="project-image-1" data-aos="zoom-in" />
-              <img src={o11} alt="project-image-1" data-aos="zoom-in" />
-              <img src={o12} alt="project-image-1" data-aos="zoom-in" />
+              <img src={o31} alt="project-image-1" data-aos="zoom-in" />
+              <img src={o24} alt="project-image-1" data-aos="zoom-in" />
               <img src={o13} alt="project-image-1" data-aos="zoom-in" />
               <img src={o14} alt="project-image-1" data-aos="zoom-in" />
               <img src={o15} alt="project-image-1" data-aos="zoom-in" />

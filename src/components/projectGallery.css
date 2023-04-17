@@ -1,0 +1,19 @@
+.gallerywrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.gallerywrap.single {
+    width: 200px;
+    cursor: pointer;
+}
+
+.gallerywrap.single img {
+    max-width: 100%;
+    
+}

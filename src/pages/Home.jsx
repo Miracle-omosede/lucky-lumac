@@ -10,6 +10,8 @@ import image5 from "../assets/images/project-image-5.jpeg";
 import image6 from "../assets/images/project-image-6.jpeg";
 import image7 from "../assets/images/project-image-7.jpg";
 import image8 from "../assets/images/project-image-8.jpeg";
+import image01 from "../assets/gallery/photo1681747033 (1).jpeg"
+import image03 from "../assets/gallery/photo1681747033 (3).jpeg";
 import construction from "../assets/gallery/project-image -10.jpg";
 import electrical from "../assets/gallery/project-image -18.jpg";
 import TypeWriterEffect from 'react-typewriter-effect';
@@ -46,25 +48,28 @@ function Home() {
             data-aos="flip-down"
           >
             <div className="lg:pb-10 pr-4 lg:pr-0">
-              <h1 className="text-jet text-[2rem] py-5 lg:text-[3rem] lg:text-5xl font-extrabold tracking-wider uppercase lg:pt-20 ">
-                <span className="text-green-600">
-                  Unleashing excellence through
-                  <TypeWriterEffect
-                    textStyle={{
-                      fontFamily: "Montserrat, sans-serif",
-                      color: "#3F3D56",
-                      fontWeight: 800,
-                      display: "block",
-                    }}
-                    startDelay={2000}
-                    cursorColor="#3F3D56"
-                    multiText={["COMMITMENT.", "Quality.", "Innovation."]}
-                    multiTextDelay={2000}
-                    typeSpeed={200}
-                  />
+              <h1 className="text-jet md:text-left text-center text-[2rem] py-5 lg:text-[3rem] lg:text-5xl font-extrabold tracking-wider uppercase lg:pt-20 ">
+                <span className="text-green-600 md:block flex flex-col items-center">
+                  <span>Unleashing excellence through</span>
+                  <span>
+                    <TypeWriterEffect
+                      textStyle={{
+                        fontFamily: "Montserrat, sans-serif",
+                        color: "#3F3D56",
+                        fontWeight: 800,
+                        display: "",
+                      }}
+                      startDelay={2000}
+                      cursorColor="#3F3D56"
+                      multiText={["COMMITMENT.", "Quality.", "Innovation."]}
+                      multiTextDelay={2000}
+                      typeSpeed={200}
+                      className="text-center"
+                    />
+                  </span>
                 </span>
               </h1>
-              <p className="text-black lg:pr-20 w-full pr-4 lg:my-5 lg:tracking-wide lg:text-xl lg:first-line lg:font-medium font-light">
+              <p className="text-black lg:pr-20 w-full pr-4 lg:my-5 lg:tracking-wide lg:text-xl lg:first-line lg:font-medium font-light md:text-left text-center ">
                 LuckyLumac is a Pioneering company that leads the way in
                 providing innovative and sustainable solutions in the civil
                 engineering and electrical services industry. With a team of
@@ -75,7 +80,10 @@ function Home() {
                 energy solutions, LuckyLumac is committed to unleashing
                 excellence through innovation.
               </p>
-              <NavLink to="/about">
+              <NavLink
+                to="/about"
+                className="flex w-auto items-center justify-center md:justify-start"
+              >
                 <button className="btn hover:shadow-lg hover:bg-warning hover:text-white lg:btn-lg btn-warning flex flex-row justify-center items-center gap-3 my-4 text-black">
                   Learn more
                   <span>
@@ -107,7 +115,7 @@ function Home() {
             <motion.h1
               initial={{ x: -250 }}
               animate={{ x: 0, y: -10 }}
-              className="text-gray-500 uppercase text-[2.3rem] md:text-[2.5rem] text-muted py-1 md:mr-0 mr-2"
+              className="text-gray-500 uppercase text-[2.3rem] md:text-[2.5rem] text-muted py-1 md:mr-0 mr-2 text-center md:text-left"
             >
               <span className="text-warning font-bold uppercase">
                 Empowering progress
@@ -118,7 +126,7 @@ function Home() {
               initial={{ x: "-100vw" }}
               animate={{ x: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-gray-500 w-full pr-4 lg:my-5 lg:tracking-wide lg:text-xl font-semibold"
+              className="text-gray-500 w-full pr-4 lg:my-5 lg:tracking-wide lg:text-xl font-semibold text-center md:text-left"
             >
               We are committed to delivering innovative and sustainable
               solutions that empower progress and drive positive change in
@@ -150,7 +158,7 @@ function Home() {
             />
           </div>
           <div
-            className="lg:col-span-6 col-span-12 flex flex-col items-left pl-9 pr-16 py-14 justify-center w-full text-muted h-full"
+            className="lg:col-span-6 col-span-12 flex flex-col items-left pl-9 pr-16 py-14 justify-center w-full text-muted h-full text-center md:text-left"
             data-aos="fade-up"
           >
             <h1 className="text-green-600 uppercase text-[2.5rem] py-1">
@@ -166,7 +174,10 @@ function Home() {
               innovative solutions, and customer satisfaction has enabled it to
               establish a reputation as a premier provider of sustainable
               solutions in the country.
-              <NavLink to="/about">
+              <NavLink
+                to="/about"
+                className="flex w-auto items-center justify-center md:justify-start"
+              >
                 <button className="btn hover:shadow-lg hover:bg-warning hover:text-white lg:btn-lg btn-warning flex flex-row justify-center items-center gap-3 my-4 text-white">
                   Learn more
                   <span>
@@ -339,11 +350,11 @@ function Home() {
 
       <section className="flex px-6">
         <div className="flex flex-col md:justify-center md:items-center w-full my-8">
-          <h1 className="flex flex-col md:items-center font-bold text-warning uppercase text-[2.5rem] ">
+          <h1 className="flex flex-col md:items-center font-bold text-warning uppercase text-[2.5rem] text-center md:text-left">
             <span className="text-3xl">services</span>
             <span className="text-green-600 md:text-[4rem] m-0">we offer</span>
           </h1>
-          <span className="w-16 h-4 bg-warning relative rounded-full"></span>
+          <span className="w-16 h-4 bg-warning relative rounded-full md:block hidden"></span>
           {/* <div>
             <div className="main font-monserrat my-10 px-4">
               <h3 className="heading">Here's what we do</h3>
@@ -410,7 +421,10 @@ function Home() {
 
           <div>
             <div className="flex flex-col-reverse md:flex-row justify-center items-center">
-              <div className="md:w-[50%] md:mb-0 mb-16" data-aos="slide-right">
+              <div
+                className="md:w-[50%] md:mb-0 mb-16  text-center md:text-left"
+                data-aos="slide-right "
+              >
                 <h1 className="text-md md:text-2xl font-semibold text-green-600">
                   We offer various services such as:
                 </h1>
@@ -437,7 +451,7 @@ function Home() {
                       <li>Geotechnical engineering</li>
                     </ul>
                   </div>
-                  <div data-aos="flip-up">
+                  <div data-aos="flip-up" className='flex items-center justify-center md:justify-start'>
                     <NavLink to="/construction">
                       <button className="btn hover:shadow-lg hover:bg-warning hover:text-green-600 lg:btn-lg flex flex-row justify-center items-center gap-3 my-4 text-white uppercase bg-none">
                         <span>
@@ -467,7 +481,7 @@ function Home() {
                 className="md:h-auto md:w-auto h-[40vh] w-full"
               >
                 <img
-                  src={construction}
+                  src={image03}
                   alt=""
                   className="md:h-[50%] h-[100%] object-cover
                  w-full md:w-auto mask1"
@@ -481,12 +495,12 @@ function Home() {
                 className="md:h-auto md:w-auto h-[40vh] w-full"
               >
                 <img
-                  src={electrical}
+                  src={image01}
                   alt=""
                   className="md:h-[50%] h-[100%] w-full md:w-auto object-cover mask1"
                 />
               </div>
-              <div className="md:w-[50%] pl-4" data-aos="slide-left">
+              <div className="md:w-[50%] pl-4 text-center md:text-left" data-aos="slide-left">
                 <h1 className="text-md md:text-2xl  font-semibold text-green-600">
                   We Also offer:
                 </h1>
@@ -511,7 +525,7 @@ function Home() {
                       <li>Solar powered boreholes</li>
                     </ul>
                   </div>
-                  <div data-aos="flip-up">
+                  <div data-aos="flip-up" className='flex items-center justify-center md:justify-left'>
                     <NavLink to="/services">
                       <button className="btn hover:shadow-lg hover:bg-warning hover:text-green-600 lg:btn-lg flex flex-row justify-center items-center gap-3 my-4 text-white uppercase bg-none">
                         <span>

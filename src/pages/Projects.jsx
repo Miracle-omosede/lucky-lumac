@@ -1,14 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 import o3 from "../assets/gallery/03.jpg";
 import o4 from "../assets/gallery/04.jpg";
 import o5 from "../assets/gallery/05.jpg";
-import o8 from "../assets/gallery/08.jpg";
 import o10 from "../assets/gallery/10.jpg";
 import o31 from "../assets/gallery/31.jpg";
 import o24 from "../assets/gallery/24.jpg";
 import o13 from "../assets/gallery/13.jpg";
 import o14 from "../assets/gallery/14.jpg";
-import o15 from "../assets/gallery/15.jpg";
 import o16 from "../assets/gallery/16.jpg";
 import o17 from "../assets/gallery/17.jpg";
 import o18 from "../assets/gallery/18.jpg";
@@ -33,12 +31,15 @@ import image20 from "../assets/gallery/project-image -20.jpg";
 import image21 from "../assets/gallery/project-image -21.jpg";
 import image23 from "../assets/gallery/project-image -23.jpg";
 import image26 from "../assets/gallery/project-image -26.jpg";
-import bs1 from "../assets/gallery/bussa1.jpg";
+import image01 from "../assets/gallery/photo1681747033 (1).jpeg"
+import image02 from "../assets/gallery/photo1681747033 (2).jpeg";
+import image03 from "../assets/gallery/photo1681747033 (3).jpeg";
+import image04 from "../assets/gallery/photo1681747033 (4).jpeg";
+import image05 from "../assets/gallery/photo1681747033 (5).jpeg";
+import image06 from "../assets/gallery/photo1681747033.jpeg";
 import bs2 from "../assets/gallery/bussa2.jpg";
 import bs3 from "../assets/gallery/bussa3.jpg";
-import bs4 from "../assets/gallery/bussa4.jpg";
 import bs5 from "../assets/gallery/bussa5.jpg";
-import bs6 from "../assets/gallery/bussa6.jpg";
 import bs7 from "../assets/gallery/bussa7.jpg";
 import bs8 from "../assets/gallery/bussa8.jpg";
 import bs9 from "../assets/gallery/bussa9.jpg";
@@ -54,17 +55,15 @@ import bs18 from "../assets/gallery/bussa18.jpg";
 import bs19 from "../assets/gallery/bussa19.jpg";
 import bs20 from "../assets/gallery/bussa20.jpg";
 import bs21 from "../assets/gallery/bussa21.jpg";
-import img8 from "../assets/images/project-image-8.jpeg"
+import img8 from "../assets/images/project-image-8.jpeg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-scroll";
 
-
 function Projects() {
-
-    useEffect(() => {
-      Aos.init({ duration: 2000 }, []);
-    });
+  useEffect(() => {
+    Aos.init({ duration: 2000 }, []);
+  });
   return (
     <div className="md:mt-36 mt-16 font-monserrat">
       <div className="col-span-12 md:mt-11 mt-11 bg-slate-900 text-white">
@@ -135,8 +134,10 @@ function Projects() {
       </div>
       <div>
         <div className="px-6">
-          <h1 className="text-6xl font-bold py-4">Welcome to our Gallery</h1>
-          <div className="py-5 flex gap-3">
+          <h1 className="md:text-6xl text-4xl font-bold py-4">
+            Welcome to our Gallery
+          </h1>
+          <div className="py-5 md:flex-row flex-col flex gap-3">
             <Link
               to="edo"
               smooth={true}
@@ -182,12 +183,35 @@ function Projects() {
             </h1>
             <hr className="my-5" />
             <div className="w-full p-5 pb-10 mx-auto mb-10 gap-5 md:columns-3 columns-1  md:space-y-5">
-              <img src={bs1} alt="Bussa project images" data-aos="zoom-in" />
               <img src={bs2} alt="Bussa project images" data-aos="zoom-in" />
               <img src={bs3} alt="Bussa project images" data-aos="zoom-in" />
-              <img src={bs4} alt="Bussa project images" data-aos="zoom-in" />
+
+              <img
+                src={image02}
+                alt="Bussa project images"
+                data-aos="zoom-in"
+              />
+              <img
+                src={image06}
+                alt="Bussa project images"
+                data-aos="zoom-in"
+              />
+              <img
+                src={image05}
+                alt="Bussa project images"
+                data-aos="zoom-in"
+              />
+              <img
+                src={image03}
+                alt="Bussa project images"
+                data-aos="zoom-in"
+              />
+              <img
+                src={image04}
+                alt="Bussa project images"
+                data-aos="zoom-in"
+              />
               <img src={bs5} alt="Bussa project images" data-aos="zoom-in" />
-              <img src={bs6} alt="Bussa project images" data-aos="zoom-in" />
               <img src={bs7} alt="Bussa project images" data-aos="zoom-in" />
               <img src={bs8} alt="Bussa project images" data-aos="zoom-in" />
               <img src={bs9} alt="Bussa project images" data-aos="zoom-in" />
@@ -206,13 +230,11 @@ function Projects() {
               <img src={o3} alt="project-image-1" data-aos="zoom-in" />
               <img src={o4} alt="project-image-1" data-aos="zoom-in" />
               <img src={o5} alt="project-image-1" data-aos="zoom-in" />
-              <img src={o8} alt="project-image-1" data-aos="zoom-in" />
               <img src={o10} alt="project-image-1" data-aos="zoom-in" />
               <img src={o31} alt="project-image-1" data-aos="zoom-in" />
               <img src={o24} alt="project-image-1" data-aos="zoom-in" />
               <img src={o13} alt="project-image-1" data-aos="zoom-in" />
               <img src={o14} alt="project-image-1" data-aos="zoom-in" />
-              <img src={o15} alt="project-image-1" data-aos="zoom-in" />
               <img src={o16} alt="project-image-1" data-aos="zoom-in" />
               <img src={o17} alt="project-image-1" data-aos="zoom-in" />
               <img src={o18} alt="project-image-1" data-aos="zoom-in" />
@@ -231,6 +253,7 @@ function Projects() {
           <hr className="my-5" />
 
           <div className="w-full p-5 pb-10 mx-auto mb-10 gap-5 md:columns-3 columns-1  md:space-y-5">
+            <img src={image01} alt="Bussa project images" data-aos="zoom-in" />
             <img src={image1} alt="project-image-1" data-aos="zoom-in" />
             <img src={image3} alt="project-image-1" data-aos="zoom-in" />
             <img src={image6} alt="project-image-1" data-aos="zoom-in" />
@@ -255,4 +278,4 @@ function Projects() {
   );
 }
 
-export default Projects
+export default Projects;

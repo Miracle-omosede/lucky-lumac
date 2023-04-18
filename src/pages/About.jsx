@@ -124,36 +124,36 @@ function About() {
       <div className="w-full font-monserrat">
         <div className="flex flex-col items-center text-center mt-10 py-20 bg-slate-700 w-full">
           <h1
-            className="uppercase text-4xl text-warning py-5 font-semibold"
+            className="uppercase md:text-4xl text-2xl text-warning py-5 font-semibold"
             data-aos="slide-right"
           >
             KNOW more about our company
           </h1>
           <p className="text-white md:px-60" data-aos="slide-left">
             LuckyLumac is a dynamic and innovative company that has been leading
-            the way in sustainable solutions in Nigeria since 1991. Our team is committed to delivering
-            exceptional quality and uncompromising integrity in all our civil
-            engineering and electrical services. We specialize in the design and
-            construction of buildings and structures, transportation
-            infrastructure, structural engineering, urban planning and
-            development, and geotechnical engineering. Our services are tailored
-            to meet the unique needs of our clients, from SMEs to large
-            corporations and government agencies. At LuckyLumac, we believe that
-            sustainable solutions are essential for the future of Nigeria.
-            That's why we are dedicated to providing cutting-edge solutions,
-            such as rooftop solar panels, innovative battery storage systems,
-            and state-of-the-art solar carports, to transform businesses and
-            communities into vibrant ecosystems of renewable energy. Our team of
-            seasoned professionals is committed to excellence, safety, and
-            delivering services that exceed our clients' expectations. We are
-            proud to collaborate with some of the most prominent brands in the
-            industry, enabling us to provide our clients with unrivaled
-            financial savings and renewable energy across the country. We are
-            passionate about forging long-lasting partnerships with our clients
-            and contributing to the development of a sustainable future for
-            Nigeria. At LuckyLumac, we are committed to harnessing the power of
-            engineering and technology to drive progress and inspire positive
-            change.
+            the way in sustainable solutions in Nigeria since 1991. Our team is
+            committed to delivering exceptional quality and uncompromising
+            integrity in all our civil engineering and electrical services. We
+            specialize in the design and construction of buildings and
+            structures, transportation infrastructure, structural engineering,
+            urban planning and development, and geotechnical engineering. Our
+            services are tailored to meet the unique needs of our clients, from
+            SMEs to large corporations and government agencies. At LuckyLumac,
+            we believe that sustainable solutions are essential for the future
+            of Nigeria. That's why we are dedicated to providing cutting-edge
+            solutions, such as rooftop solar panels, innovative battery storage
+            systems, and state-of-the-art solar carports, to transform
+            businesses and communities into vibrant ecosystems of renewable
+            energy. Our team of seasoned professionals is committed to
+            excellence, safety, and delivering services that exceed our clients'
+            expectations. We are proud to collaborate with some of the most
+            prominent brands in the industry, enabling us to provide our clients
+            with unrivaled financial savings and renewable energy across the
+            country. We are passionate about forging long-lasting partnerships
+            with our clients and contributing to the development of a
+            sustainable future for Nigeria. At LuckyLumac, we are committed to
+            harnessing the power of engineering and technology to drive progress
+            and inspire positive change.
           </p>
         </div>
       </div>

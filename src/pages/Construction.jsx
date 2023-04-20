@@ -47,7 +47,7 @@ function Construction() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="md:col-span-6 bg-gray-800 col-span-12 md:p-20 p-6 items-start">
+          <div className="md:col-span-6 bg-gray-800 col-span-12 md:p-20 p-6 items-start md:mb-0 mb-14">
             <h1
               className="text-6xl py-5 font-bold uppercase text-green-600"
               data-aos="fade-right"
@@ -56,7 +56,7 @@ function Construction() {
             </h1>
             <div className="flex md:flex-row flex-col md:gap-4 text-white z-50">
               <div
-                className="w-92 text-xl flex items-center "
+                className="md:w-92 w-full md:text-xl flex"
                 data-aos="fade-right"
               >
                 Luckylumac offers top-tier civil engineering and construction
@@ -65,12 +65,12 @@ function Construction() {
                 needs. We prioritize safety, attention to detail, and timely
                 delivery within budget. Trust Luckylumac as your partner for
                 successful projects that bring your vision to life.
-                <div
+                {/* <div
                   className="flex items-center justify-center md:mt-0 md:relative -mt-36"
                   data-aos="fade-left"
                 >
                   <span className="w-52 h-52 opacity-10 md:opacity-100 bg-green-700"></span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

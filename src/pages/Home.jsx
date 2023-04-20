@@ -48,8 +48,8 @@ function Home() {
             data-aos="flip-down"
           >
             <div className="lg:pb-10 pr-4 lg:pr-0">
-              <h1 className="text-jet md:text-left text-center text-[2rem] py-5 lg:text-[3rem] lg:text-5xl font-extrabold tracking-wider uppercase lg:pt-20 ">
-                <span className="text-green-600 md:block flex flex-col items-center">
+              <h1 className="text-jet text-[2rem] py-5 lg:text-[3rem] lg:text-5xl font-extrabold tracking-wider uppercase lg:pt-20 ">
+                <span className="text-green-600">
                   <span>Unleashing excellence through</span>
                   <span>
                     <TypeWriterEffect
@@ -69,7 +69,7 @@ function Home() {
                   </span>
                 </span>
               </h1>
-              <p className="text-black lg:pr-20 w-full pr-4 lg:my-5 lg:tracking-wide lg:text-xl lg:first-line lg:font-medium font-light md:text-left text-center ">
+              <p className="text-black lg:pr-20 w-full pr-4 lg:my-5 lg:tracking-wide lg:text-xl lg:first-line lg:font-medium font-light md:text-left ">
                 LuckyLumac is a Pioneering company that leads the way in
                 providing innovative and sustainable solutions in the civil
                 engineering and electrical services industry. With a team of
@@ -82,7 +82,7 @@ function Home() {
               </p>
               <NavLink
                 to="/about"
-                className="flex w-auto items-center justify-center md:justify-start"
+                className=""
               >
                 <button className="btn hover:shadow-lg hover:bg-warning hover:text-white lg:btn-lg btn-warning flex flex-row justify-center items-center gap-3 my-4 text-black">
                   Learn more
@@ -109,13 +109,13 @@ function Home() {
         </div>
         <div className="lg:grid lg:grid-cols-12 flex flex-col-reverse">
           <div
-            className="lg:col-span-6 col-span-12 green-bg flex flex-col items-left pl-9 pr-16 py-14 justify-center w-full h-full"
+            className="lg:col-span-6 col-span-12 green-bg flex flex-col items-left pl-9 pr-16 py-14 w-full h-full"
             data-aos="fade-left"
           >
             <motion.h1
               initial={{ x: -250 }}
               animate={{ x: 0, y: -10 }}
-              className="text-gray-500 uppercase text-[2.3rem] md:text-[2.5rem] text-muted py-1 md:mr-0 mr-2 text-center md:text-left"
+              className="text-gray-500 uppercase text-[2.3rem] md:text-[2.5rem] text-muted py-1 md:mr-0 mr-2  md:text-left"
             >
               <span className="text-warning font-bold uppercase">
                 Empowering progress
@@ -126,7 +126,7 @@ function Home() {
               initial={{ x: "-100vw" }}
               animate={{ x: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-gray-500 w-full pr-4 lg:my-5 lg:tracking-wide lg:text-xl font-semibold text-center md:text-left"
+              className="text-gray-500 w-full pr-4 lg:my-5 lg:tracking-wide lg:text-xl font-semibold md:text-left"
             >
               We are committed to delivering innovative and sustainable
               solutions that empower progress and drive positive change in
@@ -158,7 +158,7 @@ function Home() {
             />
           </div>
           <div
-            className="lg:col-span-6 col-span-12 flex flex-col items-left pl-9 pr-16 py-14 justify-center w-full text-muted h-full text-center md:text-left"
+            className="lg:col-span-6 col-span-12 flex flex-col items-left pl-9 pr-16 py-14 justify-center w-full text-muted h-full md:text-left"
             data-aos="fade-up"
           >
             <h1 className="text-green-600 uppercase text-[2.5rem] py-1">
@@ -176,7 +176,6 @@ function Home() {
               solutions in the country.
               <NavLink
                 to="/about"
-                className="flex w-auto items-center justify-center md:justify-start"
               >
                 <button className="btn hover:shadow-lg hover:bg-warning hover:text-white lg:btn-lg btn-warning flex flex-row justify-center items-center gap-3 my-4 text-white">
                   Learn more
@@ -350,11 +349,11 @@ function Home() {
 
       <section className="flex px-6">
         <div className="flex flex-col md:justify-center md:items-center w-full my-8">
-          <h1 className="flex flex-col md:items-center font-bold text-warning uppercase text-[2.5rem] text-center md:text-left">
+          <h1 className="flex flex-col md:items-center font-bold text-warning uppercase text-[2.5rem]  md:text-left">
             <span className="text-3xl">services</span>
             <span className="text-green-600 md:text-[4rem] m-0">we offer</span>
           </h1>
-          <span className="w-16 h-4 bg-warning relative rounded-full md:block hidden"></span>
+          <span className="w-16 h-4 bg-warning relative rounded-full"></span>
           {/* <div>
             <div className="main font-monserrat my-10 px-4">
               <h3 className="heading">Here's what we do</h3>
@@ -422,7 +421,7 @@ function Home() {
           <div>
             <div className="flex flex-col-reverse md:flex-row justify-center items-center">
               <div
-                className="md:w-[50%] md:mb-0 mb-16  text-center md:text-left"
+                className="md:w-[50%] md:mb-0 mb-16"
                 data-aos="slide-right "
               >
                 <h1 className="text-md md:text-2xl font-semibold text-green-600">
@@ -451,7 +450,7 @@ function Home() {
                       <li>Geotechnical engineering</li>
                     </ul>
                   </div>
-                  <div data-aos="flip-up" className='flex items-center justify-center md:justify-start'>
+                  <div data-aos="flip-up" className=''>
                     <NavLink to="/construction">
                       <button className="btn hover:shadow-lg hover:bg-warning hover:text-green-600 lg:btn-lg flex flex-row justify-center items-center gap-3 my-4 text-white uppercase bg-none">
                         <span>
@@ -500,7 +499,7 @@ function Home() {
                   className="md:h-[50%] h-[100%] w-full md:w-auto object-cover mask1"
                 />
               </div>
-              <div className="md:w-[50%] pl-4 text-center md:text-left" data-aos="slide-left">
+              <div className="md:w-[50%] pl-4 text-left" data-aos="slide-left">
                 <h1 className="text-md md:text-2xl  font-semibold text-green-600">
                   We Also offer:
                 </h1>
@@ -525,7 +524,7 @@ function Home() {
                       <li>Solar powered boreholes</li>
                     </ul>
                   </div>
-                  <div data-aos="flip-up" className='flex items-center justify-center md:justify-left'>
+                  <div data-aos="flip-up" className=''>
                     <NavLink to="/services">
                       <button className="btn hover:shadow-lg hover:bg-warning hover:text-green-600 lg:btn-lg flex flex-row justify-center items-center gap-3 my-4 text-white uppercase bg-none">
                         <span>

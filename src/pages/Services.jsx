@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import image1 from "../assets/images/construction-image4.jpg";
 import image2 from "../assets/images/projects1.jpeg";
-import image3 from "../assets/images/projects2.jpeg";
+import image3 from "../assets/images/projects22.jpg";
 import { BsArrowDownSquareFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 import Aos from "aos";

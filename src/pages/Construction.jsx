@@ -3,7 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import image1 from "../assets/images/construction-image-null.jpg";
 import image2 from "../assets/images/projects1.jpeg";
-import image3 from "../assets/images/projects2.jpeg";
+import image3 from "../assets/images/projects22.jpg";
 import { BsArrowDownSquareFill } from "react-icons/bs";
 
 

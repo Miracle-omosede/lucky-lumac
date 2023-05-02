@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react'
 import construction1 from "../assets/images/construction-image.jpg";
-import construction2 from "../assets/images/construction-image3.jpg";
+import construction2 from "../assets/images/construction-imagez.jpg";
 import construction3 from "../assets/images/construction-image5.jpg";
-import image1 from "../assets/images/project-image-1.jpeg";
+import image1 from "../assets/images/project-image-11.jpg";
 import image2 from "../assets/images/project-image-2.jpg";
 import image3 from "../assets/images/project-image-3.jpg";
-import image4 from "../assets/images/project-image-4.jpeg";
-import image5 from "../assets/images/project-image-5.jpeg";
-import image6 from "../assets/images/project-image-6.jpeg";
-import image7 from "../assets/images/project-image-7.jpg";
+import image4 from "../assets/images/project-image-4.jpg";
+import image5 from "../assets/images/project-image-5.jpg";
+import image6 from "../assets/images/project-image-61.jpg";
+import image7 from "../assets/images/project-image-71.jpg";
 import image8 from "../assets/images/project-image-8.jpeg";
 import image01 from "../assets/gallery/photo1681747033 (1).jpeg"
 import image03 from "../assets/gallery/photo1681747033 (3).jpeg";

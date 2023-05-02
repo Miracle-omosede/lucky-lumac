@@ -12,7 +12,6 @@ import o17 from "../assets/gallery/17.jpg";
 import o18 from "../assets/gallery/18.jpg";
 import o19 from "../assets/gallery/19.jpg";
 import o20 from "../assets/gallery/20.jpg";
-import o21 from "../assets/gallery/21.jpg";
 import o23 from "../assets/gallery/23.jpg";
 import image1 from "../assets/gallery/project-image -1.jpg";
 import image3 from "../assets/gallery/project-image -3.jpg";
@@ -59,6 +58,7 @@ import img8 from "../assets/images/project-image-8.jpeg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-scroll";
+import { BsArrowDownSquareFill } from "react-icons/bs";
 
 function Projects() {
   useEffect(() => {
@@ -137,7 +137,7 @@ function Projects() {
           <h1 className="md:text-6xl text-4xl font-bold py-4">
             Welcome to our Gallery
           </h1>
-          <div className="py-5 md:flex-row flex-col flex gap-3">
+          {/* <div className="py-5 md:flex-row flex-col flex gap-3">
             <Link
               to="edo"
               smooth={true}
@@ -162,9 +162,145 @@ function Projects() {
             >
               Other Projects
             </Link>
+          </div> */}
+        </div>
+        <div className="collapse">
+          <input type="checkbox" />
+          <div className="collapse-title text-2xl md:gap-0 gap-5 md:text-4xl font-semibold uppercase flex flex-row justify-between items-center py-10">
+            <h1
+              className="md:text-4xl text-xl font-semibold mx-5 capitalize"
+              id="edo"
+            >
+              Edo State Government{" "}
+              <span className="text-green-600 font-normal">Project</span>
+            </h1>
+            <span>
+              <BsArrowDownSquareFill />
+            </span>
+          </div>
+          <div className="collapse-content">
+            <div className="w-full p-5 pb-10 mx-auto mb-10 gap-5 md:columns-3 columns-1  md:space-y-5">
+              <img src={o20} alt="project-image-1" data-aos="zoom-in" />
+              <img src={img8} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image5} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image13} alt="project-image-1" data-aos="zoom-in" />
+            </div>
           </div>
         </div>
-        <div className="w-full px-5 md:px-5">
+
+        <div className="collapse">
+          <input type="checkbox" />
+          <div className="collapse-title text-2xl md:gap-0 gap-5 md:text-4xl font-semibold uppercase flex flex-row justify-between items-center py-10">
+            <h1 className="md:text-4xl text-xl font-semibold mx-5 capitalize">
+              New Bussa <span className="text-green-600 font-normal">Project</span>
+            </h1>
+            <span>
+              <BsArrowDownSquareFill />
+            </span>
+          </div>
+          <div className="collapse-content">
+            <div className="w-full p-5 pb-10 mx-auto mb-10 gap-5 md:columns-3 columns-1  md:space-y-5">
+              <img src={bs2} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs3} alt="Bussa project images" data-aos="zoom-in" />
+
+              <img
+                src={image02}
+                alt="Bussa project images"
+                data-aos="zoom-in"
+              />
+              <img
+                src={image06}
+                alt="Bussa project images"
+                data-aos="zoom-in"
+              />
+              <img
+                src={image05}
+                alt="Bussa project images"
+                data-aos="zoom-in"
+              />
+              <img
+                src={image03}
+                alt="Bussa project images"
+                data-aos="zoom-in"
+              />
+              <img
+                src={image04}
+                alt="Bussa project images"
+                data-aos="zoom-in"
+              />
+              <img src={bs5} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs7} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs8} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs9} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs10} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs11} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs12} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs13} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs14} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs15} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs16} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs17} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs18} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs19} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs20} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={bs21} alt="Bussa project images" data-aos="zoom-in" />
+              <img src={o3} alt="project-image-1" data-aos="zoom-in" />
+              <img src={o4} alt="project-image-1" data-aos="zoom-in" />
+              <img src={o5} alt="project-image-1" data-aos="zoom-in" />
+              <img src={o10} alt="project-image-1" data-aos="zoom-in" />
+              <img src={o31} alt="project-image-1" data-aos="zoom-in" />
+              <img src={o24} alt="project-image-1" data-aos="zoom-in" />
+              <img src={o13} alt="project-image-1" data-aos="zoom-in" />
+              <img src={o14} alt="project-image-1" data-aos="zoom-in" />
+              <img src={o16} alt="project-image-1" data-aos="zoom-in" />
+              <img src={o17} alt="project-image-1" data-aos="zoom-in" />
+              <img src={o18} alt="project-image-1" data-aos="zoom-in" />
+              {/* <img src={o19} alt="project-image-1" data-aos="zoom-in" /> */}
+              <img src={o23} alt="project-image-1" data-aos="zoom-in" />
+            </div>
+          </div>
+        </div>
+
+        <div className="collapse">
+          <input type="checkbox" />
+          <div className="collapse-title text-2xl md:gap-0 gap-5 md:text-4xl font-semibold uppercase flex flex-row justify-between items-center py-10">
+            <h1
+              className="md:text-4xl text-xl font-semibold capitalize mx-5"
+              id="others"
+            >
+              Other <span className="text-green-600 font-normal">Project</span>
+            </h1>
+            <span>
+              <BsArrowDownSquareFill />
+            </span>
+          </div>
+          <div className="collapse-content">
+            <div className="w-full p-5 pb-10 mx-auto mb-10 gap-5 md:columns-3 columns-1  md:space-y-5">
+              <img
+                src={image01}
+                alt="Bussa project images"
+                data-aos="zoom-in"
+              />
+              <img src={image1} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image3} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image6} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image7} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image8} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image11} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image15} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image16} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image17} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image18} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image19} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image20} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image21} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image23} alt="project-image-1" data-aos="zoom-in" />
+              <img src={image26} alt="project-image-1" data-aos="zoom-in" />
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="w-full px-5 md:px-5">
           <h1 className="md:text-4xl text-xl font-semibold capitalize" id="edo">
             Edo State Goverment{" "}
             <span className="text-green-600 font-normal">Project</span>
@@ -272,7 +408,7 @@ function Projects() {
           <div className="w-full p-5 pb-10 mx-auto mb-10 gap-5 md:columns-3 columns-1  md:space-y-5">
             <img src={image26} alt="Bussa project images" data-aos="zoom-in" />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

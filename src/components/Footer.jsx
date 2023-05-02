@@ -7,7 +7,7 @@ function Footer() {
       <div className="flex flex-col -mt-10">
         <img className="w-32 m-0 p-0" src={logo} alt="logo-image" />
         <p>
-          LUCKY LUMACS LTD
+          LUCKY LUMAC LTD
           <br />
           <span href="/Contact" className="link text-blue-600 font-semibold">Contact us</span> for efficient energy solutions.
           <br />

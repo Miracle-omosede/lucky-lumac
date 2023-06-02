@@ -28,7 +28,7 @@ function Contact() {
     };
 
 
-    fetch("http://46.101.110.173:3000/send-email", {
+    fetch("https://46.101.110.173:3000/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

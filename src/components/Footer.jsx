@@ -40,14 +40,16 @@ function Footer() {
       </div>
       <div className="uppercase">
         <span className="footer-title uppercase">reach out</span>
-        <a className="link link-hover">PH: +234-806-757-8779</a>
-        <a className="link link-hover">PH: +234-708-947-7842</a>
-        <a href="mailto:info@luckylumac.com" className="link link-hover">
+        <a className="link link-hover">PH: +234-814-320-9741</a>
+        <a className="lowercase link link-hover">
+          19, Philip Shuaibu street Wuye, FCT Abuja.
+        </a>
+        <a href="mailto:info@luckylumac.com" className="text-blue-900 underline link link-hover">
           info@luckylumac.com
         </a>
       </div>
       <div className="w-full self-end flex-row flex font-light">
-        made with ❤️<em >&copy;2023</em>
+        made with ❤️<em>&copy;2023</em>
       </div>
     </footer>
   );

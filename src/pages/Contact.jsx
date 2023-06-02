@@ -28,7 +28,7 @@ function Contact() {
     };
 
 
-    fetch("https://luckylumac.com:3001/send-email", {
+    fetch("http://46.101.110.173:3000/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

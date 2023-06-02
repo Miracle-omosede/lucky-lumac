@@ -9,9 +9,11 @@ function Footer() {
         <p>
           LUCKY LUMAC LTD
           <br />
-          <span href="/Contact" className="link text-blue-600 font-semibold">Contact us</span> for efficient energy solutions.
+          <span href="/Contact" className="link text-blue-600 font-semibold">
+            Contact us
+          </span>{" "}
+          for efficient energy solutions.
           <br />
-          
         </p>
       </div>
       <div className="uppercase">
@@ -43,6 +45,9 @@ function Footer() {
         <a href="mailto:info@luckylumac.com" className="link link-hover">
           info@luckylumac.com
         </a>
+      </div>
+      <div className="w-full self-end flex-row flex font-light">
+        made with ❤️<em >&copy;2023</em>
       </div>
     </footer>
   );

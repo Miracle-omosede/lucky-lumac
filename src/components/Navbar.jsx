@@ -210,7 +210,7 @@ function Navbar() {
                   />
                 </svg>
               </span>
-              <span id="show"> (+234)-806-757-8779</span>
+              <span id="show"> (+234)-814-320-9741</span>
             </button>
           </div>
 

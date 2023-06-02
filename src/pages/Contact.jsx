@@ -99,8 +99,7 @@ function Contact() {
               </svg>
             </span>
             <p className="md:pr-0">
-              Suite B080, H&A Plaza, Plot 24 Wuye District Opposite Okanga Plaza
-              Wuye, FCT
+              19, Philip Shuaibu street Wuye, FCT Abuja.
             </p>
           </div>
           <div
@@ -124,7 +123,7 @@ function Contact() {
               </svg>
             </span>
             <p>
-              +234-806-757-8779 <br /> +234-708-947-7842
+              +234-814-320-9741 
             </p>
           </div>
           <div

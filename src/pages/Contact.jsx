@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
     useEffect(() => {
@@ -12,14 +13,20 @@ function Contact() {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    alert("Form submitted successfully!");
-    setFullname("");
-    setEmail("");
-    setPhone("");
-    setMessage("");
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   alert("Form submitted successfully!");
+  //   setFullname("");
+  //   setEmail("");
+  //   setPhone("");
+  //   setMessage("");
 
+
+
+const form = useRef();
+
+const sendEmail = (e) => {
+  e.preventDefault();
     const formData = {
       fullname,
       email,
@@ -27,22 +34,45 @@ function Contact() {
       message,
     };
 
-
-    fetch("https://46.101.110.173:3000/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+  emailjs
+    .send(
+      "service_5bn4i4i",
+      "template_0fs27xi",
+      formData,
+      "2hOxvNv0GPWuxjhHB"
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
       },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Success:", data);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-  };
+      (error) => {
+        console.log(error.text);
+      }
+    );
+
+    alert("Form submitted successfully!");
+    setFullname("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+};
+
+
+  //   fetch("https://46.101.110.173:3000/send-email", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(formData),
+  //   })
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       console.log("Success:", data);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error:", error);
+  //     });
+  //  };
 
   return (
     <div className="overflow-x-hidden">
@@ -122,9 +152,7 @@ function Contact() {
                 />
               </svg>
             </span>
-            <p>
-              +234-814-320-9741 
-            </p>
+            <p>+234-814-320-9741</p>
           </div>
           <div
             className="flex items center text-left gap-3 md:gap-4 md:pl-40 md:pr-60 md:py-5 md:mb-5 mb-5 px-10"
@@ -148,7 +176,7 @@ function Contact() {
             </span>
             <a href="mailto:info@luckylumac.com" className="link">
               info@luckylumac.com
-            </a>
+            </a>git 
           </div>
         </div>
         <div className="col-span-12 md:col-span-6">
@@ -161,7 +189,7 @@ function Contact() {
               LUMAC WILL CONTACT YOU.
             </h1>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={sendEmail}>
               <div>
                 <div className="card-body md:px-0 px-10 py-2">
                   <div className="form-control">
@@ -170,7 +198,7 @@ function Contact() {
                     </label>
                     <input
                       required
-                      name="name"
+                      name="fullname"
                       type="text"
                       placeholder="full name"
                       className="input input-bordered"
@@ -184,6 +212,7 @@ function Contact() {
                     </label>
                     <input
                       required
+                      name="email"
                       type="text"
                       placeholder="email"
                       className="input input-bordered"
@@ -209,12 +238,14 @@ function Contact() {
                     <label className="label">
                       <span className="label-text">Questions & Comments</span>
                     </label>
-                    <textarea
+                    <input
+                      required
+                      name="message"
                       placeholder="Type Here..."
                       className="textarea textarea-bordered textarea-lg w-full"
                       value={message}
                       onChange={(event) => setMessage(event.target.value)}
-                    ></textarea>
+                    />
                   </div>
                   <div className="form-control mt-6">
                     <button
@@ -232,6 +263,6 @@ function Contact() {
       </div>
     </div>
   );
-}
+};
 
 export default Contact

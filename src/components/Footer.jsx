@@ -48,9 +48,6 @@ function Footer() {
           info@luckylumac.com
         </a>
       </div>
-      <div className="w-full self-end flex-row flex font-light">
-        made with ❤️<em>&copy;2023</em>
-      </div>
     </footer>
   );
 }
